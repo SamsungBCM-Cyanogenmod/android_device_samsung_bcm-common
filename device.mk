@@ -32,6 +32,11 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
         frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+     wifi.interface=wlan0 \
+     mobiledata.interfaces=rmnet0 \
+     ro.telephony.ril_class=SamsungBCMRIL
+
 # Charger
 PRODUCT_PACKAGES += \
         charger \

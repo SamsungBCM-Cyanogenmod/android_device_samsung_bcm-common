@@ -59,3 +59,6 @@ BOARD_BLUEDROID_VENDOR_CONF := device/samsung/galaxys2plus-common/libbt_vndcfg.t
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
+
+# RIL
+BOARD_RIL_CLASS := ../../../device/samsung/galaxys2plus-common/ril/
