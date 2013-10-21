@@ -1,5 +1,5 @@
 #
-# system.prop for GT-I9105P
+# common system.prop for Galaxy S2 Plus
 #
 
 ro.sf.lcd_density=240
