@@ -50,3 +50,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
         SamsungServiceMode
 		S2PlusSettings
+		Torch
