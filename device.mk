@@ -12,6 +12,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.log.rc:root/init.log.rc \
     $(LOCAL_PATH)/rootdir/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc
+	
+# Prebuilt kl keymaps
+PRODUCT_COPY_FILES += \
+        device/samsung/galaxys2plus-common/keymaps/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+        device/samsung/galaxys2plus-common/keymaps/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+        device/samsung/galaxys2plus-common/keymaps/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+        device/samsung/galaxys2plus-common/keymaps/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+        device/samsung/galaxys2plus-common/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
