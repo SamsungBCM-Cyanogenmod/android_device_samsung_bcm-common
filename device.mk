@@ -36,6 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
      wifi.interface=wlan0 \
      mobiledata.interfaces=rmnet0 \
      ro.telephony.ril_class=SamsungBCMRIL
+	 
+# Dalvik heap config
+include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
 # Charger
 PRODUCT_PACKAGES += \
