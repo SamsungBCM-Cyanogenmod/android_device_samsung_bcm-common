@@ -1,5 +1,5 @@
 #
-# system.prop for GT-I9105P
+# common system.prop for Galaxy S2 Plus
 #
 
 ro.sf.lcd_density=240
@@ -38,3 +38,6 @@ persist.brcm.gralloc.force_hdcp=1
 rild.libpath=/system/lib/libbrcm_ril.so
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
+
+# Disable HW overlays to fix landscape view
+debug.composition.type=gpu
