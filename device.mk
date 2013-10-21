@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
     $(LOCAL_PATH)/rootdir/init.log.rc:root/init.log.rc \
     $(LOCAL_PATH)/rootdir/vold.fstab:system/etc/vold.fstab \
-    $(LOCAL_PATH)/rootdir/init.bt.rc:root/init.bt.rc \
     $(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc
 
 # These are the hardware-specific features
