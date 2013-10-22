@@ -47,8 +47,6 @@ public class DeviceSettings extends FragmentActivity {
 	public static final String KEY_AC_CURRENCY = "ac_currency";
 	public static final String KEY_USB_CURRENCY = "usb_currency";
 	public static final String KEY_FSYNC_MODE = "fsync_mode";
-	public static final String KEY_MALI_L2MR = "mali_l2_mr";
-	public static final String KEY_MALI_PAM = "mali_pam";
 	public static final String KEY_USE_SWEEP2WAKE = "use_sweep2wake";
 	public static final String KEY_USE_SPI_CRC = "use_spi_crc";
 
