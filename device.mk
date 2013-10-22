@@ -58,6 +58,6 @@ PRODUCT_PACKAGES += \
 
 # Device-specific packages
 PRODUCT_PACKAGES += \
-        SamsungServiceMode
-		S2PlusSettings
-		Torch
+        SamsungServiceMode \
+	S2PlusSettings \
+	Torch
