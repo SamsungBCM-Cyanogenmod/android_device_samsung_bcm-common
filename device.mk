@@ -19,7 +19,9 @@ PRODUCT_COPY_FILES += \
         device/samsung/galaxys2plus-common/keymaps/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
         device/samsung/galaxys2plus-common/keymaps/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
         device/samsung/galaxys2plus-common/keymaps/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
-        device/samsung/galaxys2plus-common/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
+        device/samsung/galaxys2plus-common/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
+        device/samsung/galaxys2plus-common/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
+        device/samsung/galaxys2plus-common/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
