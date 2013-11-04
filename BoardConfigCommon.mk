@@ -28,7 +28,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_EGL_CFG := device/samsung/galaxys2plus-common/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
-BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_SKTEXTBOX := true
 
 # Wifi
@@ -57,7 +56,10 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/samsung/galaxys2plus-common/libbt_vndcfg.txt
 
 # Audio
-COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
+# 2013_11_04: switch to generic audio for now because something is broken with 4.3 and needs to be fixed
+BOARD_USES_GENERIC_AUDIO := true
+#BOARD_USES_ALSA_AUDIO := true
+#COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
