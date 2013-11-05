@@ -40,11 +40,13 @@ etc/wifi/wpa_supplicant.conf
 lib/hw/alsa.default.so
 lib/hw/audio.hdmi.capri.so
 lib/hw/audio.primary.capri.so
+lib/hw/audio.r_submix.default.so
 lib/hw/audio.usb.capri.so
 lib/hw/gps.capri.so
 lib/hw/sensors.capri.so
 lib/libasound.so
 lib/lib_Samsung_Resampler.so
+lib/lib_Samsung_SB_AM_for_ICS_v03008.so
 lib/lib_SamsungRec_V01006.so
 lib/libaacdecoderwrapper.so
 lib/libat.so
@@ -78,6 +80,7 @@ lib/libmmal.so
 lib/libmmal_components.so
 lib/libmmal_util.so
 lib/libmmal_vc.so
+lib/libnbaio.so
 lib/libOMX.brcm.audio.aac.decoder.so
 lib/libOMX.brcm.audio.aac.encoder.so
 lib/libOMX.brcm.audio.amrnb.decoder.so
@@ -93,6 +96,7 @@ lib/libsamsungRecord.so
 lib/libsamsungSoundbooster.so
 lib/libseckeyprov.so
 lib/libsecnativefeature.so
+lib/libsecril-client.so
 lib/libsmct.so
 lib/libsoc.so
 lib/libsoundalive.so
@@ -101,6 +105,7 @@ lib/libsoundspeed.so
 lib/libstagefrighthw.so
 lib/libstagefrighthw_a.so
 lib/libsthmb.so
+lib/libtinyalsa.so
 lib/libtvservice.so
 lib/libtvservice_binder.so
 lib/libuecodec.so
@@ -115,6 +120,7 @@ lib/libWFC.so
 lib/libwvdrm_L3.so
 lib/libwvm.so
 lib/libWVStreamControlAPI_L3.so
+lib/modules/dhd.ko
 lib/modules/VoiceSolution.ko
 lib/soundfx/libaudiopreprocessing.so
 lib/soundfx/libbundlewrapper.so
