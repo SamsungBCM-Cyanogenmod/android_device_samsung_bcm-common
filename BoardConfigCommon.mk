@@ -64,6 +64,3 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/galaxys2plus-common/ril/
-
-# Vibrator
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/samsung/galaxys2plus-common/vibrator/vibrator.c
