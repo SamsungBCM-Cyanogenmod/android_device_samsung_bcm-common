@@ -1,11 +1,9 @@
 bin/at_distributor
-bin/atrace
 bin/atx
 bin/atxd
 bin/BCM4330B1_002.001.003.0876.0996.hcd
 bin/bkmgrd
 bin/cate_rpc_util
-bin/emma
 bin/geomagneticd
 bin/glgps
 bin/gps.cer
@@ -123,8 +121,6 @@ usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so
 usr/lib/alsa-lib/libbcm_hp_filter.so
 usr/lib/alsa-lib/libbcm_test_filter.so
 usr/share/alsa/alsa.conf
-vendor/firmware/bcm2079xB4_firmware_20793.ncd
-vendor/firmware/bcm2079xB4_pre_firmware_20793.ncd
 vendor/lib/egl/libGLES_vc4.so
 vendor/lib/hw/camera.capri.so
 vendor/lib/hw/gralloc.capri.so
