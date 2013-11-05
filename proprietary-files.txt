@@ -40,7 +40,6 @@ etc/wifi/wpa_supplicant.conf
 lib/hw/alsa.default.so
 lib/hw/audio.hdmi.capri.so
 lib/hw/audio.primary.capri.so
-#lib/hw/audio.r_submix.default.so
 lib/hw/audio.usb.capri.so
 lib/hw/gps.capri.so
 lib/hw/sensors.capri.so
@@ -80,7 +79,6 @@ lib/libmmal.so
 lib/libmmal_components.so
 lib/libmmal_util.so
 lib/libmmal_vc.so
-#lib/libnbaio.so
 lib/libOMX.brcm.audio.aac.decoder.so
 lib/libOMX.brcm.audio.aac.encoder.so
 lib/libOMX.brcm.audio.amrnb.decoder.so
@@ -105,7 +103,6 @@ lib/libsoundspeed.so
 lib/libstagefrighthw.so
 lib/libstagefrighthw_a.so
 lib/libsthmb.so
-#lib/libtinyalsa.so
 lib/libtvservice.so
 lib/libtvservice_binder.so
 lib/libuecodec.so
@@ -122,11 +119,6 @@ lib/libwvm.so
 lib/libWVStreamControlAPI_L3.so
 lib/modules/dhd.ko
 lib/modules/VoiceSolution.ko
-lib/soundfx/libaudiopreprocessing.so
-lib/soundfx/libbundlewrapper.so
-lib/soundfx/libdownmix.so
-lib/soundfx/libreverbwrapper.so
-lib/soundfx/libvisualizer.so
 usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so
 usr/lib/alsa-lib/libbcm_hp_filter.so
 usr/lib/alsa-lib/libbcm_test_filter.so
