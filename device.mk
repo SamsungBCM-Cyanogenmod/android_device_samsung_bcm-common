@@ -78,10 +78,16 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-	audio.a2dp.default
+	audio.a2dp.default \
+	audio.r_submix.default \
+	libtinyalsa
 
 # Device-specific packages
 PRODUCT_PACKAGES += \
 	SamsungServiceMode \
 	S2PlusSettings \
 	Torch
+
+# Wifi
+PRODUCT_PACKAGES += \
+	libnetcmdiface
