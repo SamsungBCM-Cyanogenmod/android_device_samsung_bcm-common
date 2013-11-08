@@ -96,3 +96,16 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
 	libnetcmdiface
+	
+# Goo IM Updater
+ifeq ($(USER),kingbabasula)
+PRODUCT_COPY_FILES += \
+    device/samsung/galaxys2plus-common/prebuilt/GooManager_2.1.2.apk:system/app/GooManager.apk
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=KINGbabasula-$(BUILD_VERSION)-$(LUNCH)-$(BUILD_NUMBER) \
+    ro.developerid=KINGbabasula \
+    ro.goo.developerid=KINGbabasula \
+    ro.goo.rom=KINGbabasula-$(TARGET_PRODUCT) \
+    ro.goo.version=$(shell date +%s)
+endif
