@@ -17,13 +17,18 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxys2plus-common/keymaps/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
-	device/samsung/galaxys2plus-common/keymaps/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
-	device/samsung/galaxys2plus-common/keymaps/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	device/samsung/galaxys2plus-common/keymaps/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
-	device/samsung/galaxys2plus-common/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
-	device/samsung/galaxys2plus-common/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
-	device/samsung/galaxys2plus-common/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
+	$(LOCAL_PATH)/keymaps/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	$(LOCAL_PATH)/keymaps/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	$(LOCAL_PATH)/keymaps/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	$(LOCAL_PATH)/keymaps/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	$(LOCAL_PATH)/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
+	$(LOCAL_PATH)/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
+	$(LOCAL_PATH)/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
+
+# use Samsung apns and spn
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/prebuilt/apns-conf.xml:system/etc/apns-conf.xml \
+	$(LOCAL_PATH)/prebuilt/spn-conf.xml:system/etc/spn-conf.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -65,7 +70,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libbrcm_ril.so \
 	ro.ril.hsxpa=1 \
 	ro.ril.gprsclass=10 \
-	debug.composition.type=gpu \
 	wifi.interface=wlan0 \
 	mobiledata.interfaces=rmnet0 \
 	ro.telephony.ril_class=SamsungBCMRIL
@@ -98,16 +102,16 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
 	libnetcmdiface
-	
+
 # Goo IM Updater
 ifeq ($(USER),kingbabasula)
 PRODUCT_COPY_FILES += \
-    device/samsung/galaxys2plus-common/prebuilt/GooManager_2.1.2.apk:system/app/GooManager.apk
+	device/samsung/galaxys2plus-common/prebuilt/GooManager_2.1.2.apk:system/app/GooManager.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=KINGbabasula-$(BUILD_VERSION)-$(LUNCH)-$(BUILD_NUMBER) \
-    ro.developerid=KINGbabasula \
-    ro.goo.developerid=KINGbabasula \
-    ro.goo.rom=KINGbabasula-$(TARGET_PRODUCT) \
-    ro.goo.version=$(shell date +%s)
+	ro.modversion=KINGbabasula-$(BUILD_VERSION)-$(LUNCH)-$(BUILD_NUMBER) \
+	ro.developerid=KINGbabasula \
+	ro.goo.developerid=KINGbabasula \
+	ro.goo.rom=KINGbabasula-$(TARGET_PRODUCT) \
+	ro.goo.version=$(shell date +%s)
 endif

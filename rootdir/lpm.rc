@@ -72,6 +72,9 @@ service immvibed /system/bin/immvibed
 service lpmkey /system/bin/lpmkey
     user root
 
+service battery_charger /charger
+    user root
+
 # adbd is controlled by the persist.service.adb.enable system property
 service adbd /sbin/adbd
     disabled
