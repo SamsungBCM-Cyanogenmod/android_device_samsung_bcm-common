@@ -1,3 +1,5 @@
+$(call inherit-product-if-exists, vendor/samsung/galaxys2plus-common/galaxys2plus-common-vendor.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/samsung/galaxys2plus-common/overlay
 
 LOCAL_PATH := device/samsung/galaxys2plus-common
