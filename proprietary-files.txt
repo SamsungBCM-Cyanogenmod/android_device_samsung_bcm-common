@@ -17,6 +17,7 @@ bin/tvserver
 bin/vcdbg
 bin/vclmk
 bin/vcos-version
+etc/apns-conf.xml
 etc/asound.conf
 etc/audio_policy.conf
 etc/camera_info.ini
@@ -29,6 +30,7 @@ etc/gps.conf
 etc/media_codecs.xml
 etc/media_profiles.xml
 etc/sensors.conf
+etc/spn-conf.xml
 etc/srm.bin
 etc/Volume.db
 etc/wifi/bcmdhd_apsta.bin

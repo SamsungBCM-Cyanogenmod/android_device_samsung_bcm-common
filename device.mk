@@ -25,11 +25,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
 	$(LOCAL_PATH)/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
 
-# use Samsung apns and spn
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilt/apns-conf.xml:system/etc/apns-conf.xml \
-	$(LOCAL_PATH)/prebuilt/spn-conf.xml:system/etc/spn-conf.xml
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -95,6 +90,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific packages
 PRODUCT_PACKAGES += \
+	com.android.future.usb.accessory \
 	SamsungServiceMode \
 	S2PlusSettings \
 	Torch
@@ -106,7 +102,7 @@ PRODUCT_PACKAGES += \
 # Goo IM Updater
 ifeq ($(USER),kingbabasula)
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxys2plus-common/prebuilt/GooManager_2.1.2.apk:system/app/GooManager.apk
+	$(LOCAL_PATH)/prebuilt/GooManager_2.1.2.apk:system/app/GooManager.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.modversion=KINGbabasula-$(BUILD_VERSION)-$(LUNCH)-$(BUILD_NUMBER) \
