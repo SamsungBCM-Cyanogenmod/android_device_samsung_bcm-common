@@ -65,6 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libbrcm_ril.so \
 	ro.ril.hsxpa=1 \
 	ro.ril.gprsclass=10 \
+	debug.composition.type=gpu \
 	wifi.interface=wlan0 \
 	mobiledata.interfaces=rmnet0 \
 	ro.telephony.ril_class=SamsungBCMRIL
