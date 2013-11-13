@@ -68,3 +68,6 @@ BOARD_CHARGER_RES := device/samsung/galaxys2plus-common/DeviceSettings/res/charg
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/galaxys2plus-common/ril/
+
+# Hardware tunables (device parts replacement)
+BOARD_HARDWARE_CLASS := device/samsung/galaxys2plus-common/cmhw
