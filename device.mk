@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/prebuilt/libdnshostprio.so:system/lib/libdnshostprio.so \
 	$(LOCAL_PATH)/prebuilt/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
-	$(LOCAL_PATH)/prebuilt/qnet-plugin.so/system/lib/qnet-plugin.so
+	$(LOCAL_PATH)/prebuilt/qnet-plugin.so:/system/lib/qnet-plugin.so
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
