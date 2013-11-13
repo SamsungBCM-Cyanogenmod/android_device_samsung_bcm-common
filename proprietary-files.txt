@@ -70,6 +70,8 @@ lib/libcapi2.so
 lib/libcate_rpc.so
 lib/libcontainers.so
 lib/libdispmanx.so
+lib/libdnshostprio.so
+lib/libgpumonitor.so
 lib/libhdcp.so
 lib/libhdcp2.so
 lib/libHDCPKeyManager.so
@@ -117,6 +119,9 @@ lib/libWFC.so
 lib/libwvdrm_L3.so
 lib/libwvm.so
 lib/libWVStreamControlAPI_L3.so
+lib/pp_proc_plugin.so
+lib/qnet-plugin.so
+lib/spl_proc_plugin.so
 lib/modules/dhd.ko
 lib/modules/VoiceSolution.ko
 usr/idc/sec_touchscreen.idc
