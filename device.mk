@@ -66,6 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.hsxpa=1 \
 	ro.ril.gprsclass=10 \
 	debug.composition.type=gpu \
+	debug.egl.hw.gpumonitor=1 \
 	wifi.interface=wlan0 \
 	mobiledata.interfaces=rmnet0 \
 	ro.telephony.ril_class=SamsungBCMRIL
