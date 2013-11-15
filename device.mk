@@ -1,8 +1,8 @@
 $(call inherit-product-if-exists, vendor/samsung/galaxys2plus-common/galaxys2plus-common-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/galaxys2plus-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/bcm-common/overlay
 
-LOCAL_PATH := device/samsung/galaxys2plus-common
+LOCAL_PATH := device/samsung/bcm-common
 
 # Use high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi

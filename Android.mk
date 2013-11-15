@@ -22,7 +22,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),s2vep,s2ve)
+ifeq ($(TARGET_DEVICE),s2vep,s2ve,baffin)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
