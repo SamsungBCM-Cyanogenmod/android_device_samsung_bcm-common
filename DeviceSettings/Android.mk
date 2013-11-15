@@ -7,7 +7,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := android-support-v14
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_PACKAGE_NAME := S2PlusSettings
+LOCAL_PACKAGE_NAME := BCMSettings
 LOCAL_CERTIFICATE := platform
 
 include $(BUILD_PACKAGE)
