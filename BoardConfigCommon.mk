@@ -24,9 +24,12 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Hardware rendering
 BOARD_EGL_CFG := device/samsung/bcm-common/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
+
+# SkTextBox for libtvout
 BOARD_USES_SKTEXTBOX := true
 
 # Wifi
