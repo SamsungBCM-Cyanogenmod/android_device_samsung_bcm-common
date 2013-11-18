@@ -28,6 +28,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_EGL_CFG := device/samsung/bcm-common/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
+BOARD_EGL_NEEDS_LEGACY_FB := true
 
 # SkTextBox for libtvout
 BOARD_USES_SKTEXTBOX := true
