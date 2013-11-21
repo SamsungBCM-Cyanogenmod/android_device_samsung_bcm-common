@@ -100,6 +100,11 @@ PRODUCT_PACKAGES += \
 	SamsungServiceMode \
 	BCMSettings \
 	Torch
+	
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+        make_ext4fs \
+        setup_fs	
 
 # Wifi
 PRODUCT_PACKAGES += \
