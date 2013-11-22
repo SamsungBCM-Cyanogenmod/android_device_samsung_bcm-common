@@ -56,10 +56,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/samsung/bcm-common/libbt_vndcfg.txt
 
 # Audio
-# 2013_11_04: switch to generic audio for now because something is broken with 4.3 and needs to be fixed
 BOARD_USES_GENERIC_AUDIO := true
-#BOARD_USES_ALSA_AUDIO := true
-#COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
