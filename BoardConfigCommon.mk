@@ -67,4 +67,5 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_CHARGER_RES := device/samsung/bcm-common/DeviceSettings/res/charger
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/bcm-common/ril/
+#TODO: Something with RIL is broken
+#BOARD_RIL_CLASS := ../../../device/samsung/bcm-common/ril/
