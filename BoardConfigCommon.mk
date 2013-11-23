@@ -67,4 +67,4 @@ BOARD_CHARGER_RES := device/samsung/bcm-common/DeviceSettings/res/charger
 
 # RIL
 #TODO: Something with RIL is broken
-#BOARD_RIL_CLASS := ../../../device/samsung/bcm-common/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/bcm-common/ril/
