@@ -32,7 +32,7 @@ import com.android.internal.telephony.dataconnection.DataCallResponse;
  *
  * {@hide}
  */
-public class SamsungBCMRIL extends BroadcomMSIMRIL implements CommandsInterface {
+public class SamsungBCMRIL extends RIL implements CommandsInterface {
     public SamsungBCMRIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription);
         mQANElements = 5;
