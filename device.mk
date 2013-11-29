@@ -39,33 +39,6 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
 	
-# common system.props for Broadcom devices
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=240 \
-	ro.lcd_brightness=180 \
-	ro.lcd_min_brightness=40 \
-	persist.sys.usb.config=mtp,adb \
-	ro.product.multi_touch_enabled=true \
-	ro.product.max_num_touch=2 \
-	ro.opengles.version=131072 \
-	debug.hwui.render_dirty_regions=false \
-	brcm.graphics.async_errors=true \
-	ro.tvout.enable=true \
-	hdmi.orientation.locked=false \
-	persist.sys.hdmi.on=0 \
-	persist.sys.videomode = 0 \
-	persist.sys.hdmivideorotation =0 \
-	brcm.hwc.no-hdmi-trans=1 \
-	media.enable-commonsource=true \
-	persist.brcm.gralloc.force_hdcp=1 \
-	rild.libpath=/system/lib/libbrcm_ril.so \
-	ro.ril.hsxpa=1 \
-	ro.ril.gprsclass=10 \
-	debug.composition.type=gpu \
-	wifi.interface=wlan0 \
-	mobiledata.interfaces=rmnet0 \
-	ro.telephony.ril_class=SamsungBCMRIL
-
 # Dalvik heap config
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
