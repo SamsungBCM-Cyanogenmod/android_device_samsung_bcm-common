@@ -54,7 +54,7 @@ BOARD_NO_APSME_ATTR := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/bcm-common/libbt_vndcfg.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/bcm-common/configs/libbt_vndcfg.txt
 
 # Audio
 #BOARD_USES_GENERIC_AUDIO := true
