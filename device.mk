@@ -23,12 +23,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
 	$(LOCAL_PATH)/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
 	
-# Some prebuilt libs
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilt/libdnshostprio.so:system/lib/libdnshostprio.so \
-	$(LOCAL_PATH)/prebuilt/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
-	$(LOCAL_PATH)/prebuilt/qnet-plugin.so:/system/lib/qnet-plugin.so
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
