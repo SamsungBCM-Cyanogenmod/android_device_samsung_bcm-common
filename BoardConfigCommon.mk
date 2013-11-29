@@ -1,5 +1,6 @@
 USE_CAMERA_STUB := true
 
+# Architecture
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := capri
@@ -25,7 +26,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Hardware rendering
-BOARD_EGL_CFG := device/samsung/bcm-common/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/samsung/bcm-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
 BOARD_EGL_NEEDS_LEGACY_FB := true
@@ -66,5 +67,4 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_CHARGER_RES := device/samsung/bcm-common/DeviceSettings/res/charger
 
 # RIL
-#TODO: Something with RIL is broken
 BOARD_RIL_CLASS := ../../../device/samsung/bcm-common/ril/

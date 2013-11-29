@@ -13,15 +13,15 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/vold.fstab:system/etc/vold.fstab \
 	$(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc
 
-# Prebuilt kl keymaps
+# Prebuilt kl keylayout
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/keymaps/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
-	$(LOCAL_PATH)/keymaps/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
-	$(LOCAL_PATH)/keymaps/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	$(LOCAL_PATH)/keymaps/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
-	$(LOCAL_PATH)/keymaps/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
-	$(LOCAL_PATH)/keymaps/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
-	$(LOCAL_PATH)/keymaps/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
+	$(LOCAL_PATH)/keylayout/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	$(LOCAL_PATH)/keylayout/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	$(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	$(LOCAL_PATH)/keylayout/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	$(LOCAL_PATH)/keylayout/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
+	$(LOCAL_PATH)/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
+	$(LOCAL_PATH)/keylayout/Vendor_05ac_Product_0255.kl:system/usr/keylayout/Vendor_05ac_Product_0255.kl
 	
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
 	
-# common system.props for Galaxy S2 Plus
+# common system.props for Broadcom devices
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=240 \
 	ro.lcd_brightness=180 \
@@ -62,7 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.hsxpa=1 \
 	ro.ril.gprsclass=10 \
 	debug.composition.type=gpu \
-	debug.egl.hw.gpumonitor=1 \
 	wifi.interface=wlan0 \
 	mobiledata.interfaces=rmnet0 \
 	ro.telephony.ril_class=SamsungBCMRIL
