@@ -66,7 +66,9 @@ PRODUCT_PACKAGES += \
 	com.android.future.usb.accessory \
 	SamsungServiceMode \
 	BCMSettings \
-	Torch
+	Torch \
+	org.cyanogenmod.hardware \
+	org.cyanogenmod.hardware.xml
 	
 # Filesystem management tools
 PRODUCT_PACKAGES += \
